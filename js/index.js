@@ -3,18 +3,47 @@ let foodSound = new Audio("../music/food.mp3");
 let gameOverSound = new Audio("../music/gameover.mp3");
 let moveSound = new Audio("../music/move.mp3");
 let musicSound = new Audio("../music/music.mp3");
+//music stuff end here
+let speed=3,lastPaintTime=0; //speedy stuff here
+let snakeArr = [
+	{
+		x:13,
+		y:15
+	}
+]
+//####
 
 
-window.onclick=(e)=>
+window.ondblclick=(e)=>
 {
-  musicSound.play();
+	musicSound.oncanplay=(e)=>{
+		musicSound.play();
+	}
+	window.ondblclick=null;
 }
 
 
 function main(currTime){
-  window.requestAnimationFrame(main);
+	if((currTime - lastPaintTime)/1000 < 1/speed);else{
+		
+		gameEngine();
+		lastPaintTime=currTime;
+	}
+	window.requestAnimationFrame(main);
 }
 
+function gameEngine(){
+	//####
+	
+	//####
+	board.innerHTML="";
+	snakeArr.forEach((val,i)=>{
+		let snakeElement = document.createElement("div");
+		snakeElement.style.gridRowStart=`${val.y}`
+		
+		
+	})
+}
 
 
 window.onkeydown=(e)=>{
