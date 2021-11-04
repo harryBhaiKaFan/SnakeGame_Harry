@@ -5,6 +5,8 @@ let foodSound = new Audio("../music/food.mp3");
 let gameOverSound = new Audio("../music/gameover.mp3");
 let moveSound = new Audio("../music/move.mp3");
 let musicSound = new Audio("../music/music.mp3");
+
+
 //music stuff end here 🎵🎶
 
 let timeR=200;
@@ -149,9 +151,11 @@ function main(currTime){
 	window.requestAnimationFrame(main);
 }
 //####
-if(alert("Press any key or OK to start") || true)
-{
-	window.requestAnimationFrame(main);
+musicSound.oncanplay=(e)=>{
+	if(alert("Press any key or OK to start") || true)
+	{
+		window.requestAnimationFrame(main);
+	}
 }
 //####
 
