@@ -4,11 +4,11 @@ const board=document.querySelector("#board");
 let orgin=location.origin;
 
 if(location.hostname != "localhost"){
-	origin+="SnakeGame_Harry";
+	origin+="/SnakeGame_Harry";
 }
 
 let foodSound = new Audio(origin+"/music/food.mp3");
-let gameOverSound = new Audio(location.origin+"/music/gameover.mp3");
+let gameOverSound = new Audio(origin+"/music/gameover.mp3");
 let moveSound = new Audio(origin+"/music/move.mp3");
 let musicSound = new Audio(origin+"/music/music.mp3");
 
