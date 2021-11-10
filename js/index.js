@@ -152,7 +152,7 @@ function main(currTime){
 }
 //####
 musicSound.oncanplay=(e)=>{
-if(alert("Press any key or OK to start") || true)
+	if(alert("Press any key or OK to start") || true)
 {
 	window.requestAnimationFrame(main);
 }
