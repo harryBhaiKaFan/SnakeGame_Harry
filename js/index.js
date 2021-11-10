@@ -1,10 +1,11 @@
 const board=document.querySelector("#board");
 //getting elems done here
 
-let foodSound = new Audio("/music/food.mp3");
-let gameOverSound = new Audio("/music/gameover.mp3");
-let moveSound = new Audio("/music/move.mp3");
-let musicSound = new Audio("/music/music.mp3");
+let foodSound = new Audio(location.origin+"/music/food.mp3");
+let gameOverSound = new Audio(location.origin+"/music/gameover.mp3");
+let moveSound = new Audio(location.origin+"/music/move.mp3");
+let musicSound = new Audio(location.origin+"/music/music.mp3");
+
 
 
 //music stuff end here 🎵🎶
