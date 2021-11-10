@@ -1,12 +1,18 @@
 const board=document.querySelector("#board");
 //getting elems done here
 
-let foodSound = new Audio(location.origin+"/music/food.mp3");
-let gameOverSound = new Audio(location.origin+"/music/gameover.mp3");
-let moveSound = new Audio(location.origin+"/music/move.mp3");
-let musicSound = new Audio(location.origin+"/music/music.mp3");
+let orgin=location.origin;
 
-alert(location.origin);
+if(location.hostname != "localhost"){
+	origin+="SnakeGame_Harry";
+}
+
+let foodSound = new Audio(origin+"/music/food.mp3");
+let gameOverSound = new Audio(location.origin+"/music/gameover.mp3");
+let moveSound = new Audio(origin+"/music/move.mp3");
+let musicSound = new Audio(origin+"/music/music.mp3");
+
+
 
 //music stuff end here 🎵🎶
 
