@@ -151,12 +151,12 @@ function main(currTime){
 	window.requestAnimationFrame(main);
 }
 //####
-moveSound.oncanplay=(e)=>{
+
 if(alert("Press any key or OK to start") || true)
 {
 	window.requestAnimationFrame(main);
 }
-}
+
 //####
 
 function moveUp()
