@@ -6,7 +6,7 @@ let gameOverSound = new Audio(location.origin+"/music/gameover.mp3");
 let moveSound = new Audio(location.origin+"/music/move.mp3");
 let musicSound = new Audio(location.origin+"/music/music.mp3");
 
-
+alert(location.origin);
 
 //music stuff end here 🎵🎶
 
